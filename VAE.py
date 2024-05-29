@@ -5,6 +5,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Dataset
 from torchvision import datasets, transforms
 
+
 class VAE(nn.Module):
     def __init__(self, vocab_size, hidden_dim, z_dim, pad_idx):
         super(VAE, self).__init__()
